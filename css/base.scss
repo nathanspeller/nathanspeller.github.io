@@ -1,0 +1,72 @@
+// VARIABLES ============================================
+$serif : "Merriweather", Georgia, serif;
+$sans-serif : "Open Sans", Helvetica, Arial, sans-serif;
+
+$darkest: #333028;
+$dark: #555;
+
+$primary: #008CF7;
+$success: #8BDA72;
+$danger: #F14F45;
+$info: #35AEED;
+
+$yellow: #FFD600;
+
+$light: #CCC4C1;
+$lighter: #e8e4e3;
+$lightest: #F7F5F1;
+
+
+// BASE =================================================
+body{
+  font-family: $sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    font-family: $sans-serif;
+    line-height: 1.4;
+    letter-spacing: -1px;
+    margin: 36px 0;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 60px;
+}
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+p, blockquote{
+    margin: 36px 0;
+}
+
+p, blockquote, li, ol, ul, blockquote p, pre{
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 36px;
+    font-family: Merriweather;
+}
+
+ol.breadcrumb{
+    background-color: #FFF;
+    padding: 0;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 0 20px;
+}
+
+a{
+    color: $primary;
+}
