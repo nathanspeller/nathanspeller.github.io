@@ -3,9 +3,16 @@ layout: default
 ---
 <div class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-    <h2>{{ page.title }}</h2>
-    <p class="meta">{{ page.date | date_to_string }}</p>
 
+    <div class="post-header">
+      <a href="/" class="nathan-speller-logo"></a>
+      <h3 class="logo-title">Nathan Speller</h3>
+      <h3 class="logo-subtitle">Subhead</h3>
+    </div>
+
+    <h4 class="category">FEATURED</h4>
+    <h1 class="title">{{ page.title }}</h1>
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
     <div class="post">
     {{ content }}
     </div>

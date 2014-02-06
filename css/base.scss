@@ -2,7 +2,7 @@
 $serif : "Merriweather", Georgia, serif;
 $sans-serif : "Open Sans", Helvetica, Arial, sans-serif;
 
-$darkest: #333028;
+$darkest: #222;
 $dark: #555;
 
 $primary: #008CF7;
@@ -10,7 +10,8 @@ $success: #8BDA72;
 $danger: #F14F45;
 $info: #35AEED;
 
-$yellow: #FFD600;
+$yellow: #FFCB65;
+$purple: #63C;
 
 $light: #CCC4C1;
 $lighter: #e8e4e3;
@@ -20,26 +21,29 @@ $lightest: #F7F5F1;
 // BASE =================================================
 body{
   font-family: $sans-serif;
+  padding-bottom: 120px;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
     font-family: $sans-serif;
     line-height: 1.4;
-    letter-spacing: -1px;
     margin: 36px 0;
 }
 
 h1{
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: -1px;
 }
 h2{
     font-size: 28px;
+    letter-spacing: -1px;
 }
 
 h3{
     font-size: 24px;
+    letter-spacing: -1px;
 }
 
 h4{
@@ -70,3 +74,184 @@ blockquote{
 a{
     color: $primary;
 }
+
+::selection {
+    background: #FFEBBF; /* Safari */
+    }
+::-moz-selection {
+    background: #FFEBBF; /* Firefox */
+}
+
+// LOGO ===============================================================
+.logo-header{
+    text-align: center;
+    padding-top: 100px;
+    h1{
+        font-size: 36px;
+        color: $danger;
+    }
+}
+.nathan-speller-logo{
+    display: inline-block;
+    height: 64px;
+    width: 84px;
+    background-image: url("/images/nathan-speller-logo.png");
+    margin: 0 auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .nathan-speller-logo{
+        background-image: url("/images/nathan-speller-logo@2x.png");
+        background-size: 84px 64px;
+    }
+}
+
+// CATEGORIES =========================================================
+.category{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $light;
+    margin-bottom: 20px;
+}
+
+// POSTS LISTS ========================================================
+
+.views{
+    color: $light;
+    text-transform: uppercase;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    right: 50px;
+    bottom: 7px;
+    margin-right: -36px;
+}
+
+ul.posts{
+    margin: 0;
+    padding: 0;
+    li{
+        border-top: 2px dotted $light;
+        list-style-type: none;
+        &:last-child{
+            border-bottom: 2px dotted $light;
+        }
+        .stars{
+            float: left;
+            margin-right: -50px;
+            position: relative;
+            right: 65px;
+            width: 50px;
+            top: 14px;
+            text-align: right;
+            .star{
+                background-image: url("/images/circle.png");
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+            }
+            @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+                .star{
+                    background-image: url("/images/circle@2x.png");
+                    background-size: 10px 10px;
+                }
+            }
+        }
+        a{
+            display: block;
+            padding: 15px 0px;
+            &:hover{
+                text-decoration: none;
+                // background-color: $lightest;
+                h3{
+                    color: $danger;
+                }
+            }
+            h3{
+                color: $darkest;
+                margin: 0;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            h4{
+                color: $darkest;
+                font-weight: 100;
+                margin: 0;
+                font-size: 20px;
+                color: #AAA;
+            }
+        }
+    }
+}
+
+// POSTS =============================================================
+
+.post-header{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    h3{
+        margin: 0;
+        line-height: 40px;
+    }
+    .logo-title{
+        color: $danger;
+        font-size: 24px;
+    }
+    .logo-subtitle{
+        font-weight: 100;
+        color: $dark;
+    }
+
+    .nathan-speller-logo{
+        position: relative;
+        right: 120px;
+        top: 10px;
+        float: left;
+        margin-right: -86px;
+    }
+}
+
+@media only screen and (max-width : 990px) {
+    .post-header{
+        .nathan-speller-logo{
+            float: right;
+        }
+    }
+}
+
+
+.title{
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.subtitle{
+    font-weight: 100;
+    font-size: 32px;
+    margin-top: 0;
+    color: $dark;
+}
+
+.post{
+    h2,h3{
+        margin-bottom: -20px;
+    }
+    blockquote{
+        border-color: $yellow;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
