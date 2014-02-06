@@ -10,11 +10,11 @@ categories:
 
 Our goal for this project is to design a color picker that helps everyone (even your grandma) pick "better" color combinations. In other words, is color picking limited to those with taste or is there some underlying relationship we can utilize? Can we write an algorithm that selects great color combinations for us?
 
-Below is an experiment I call _The Colors of Dribbble_. It picks a random color and then displays the palettes of the most popular shots from [Dribbble](http://dribbble.com/) that contain that color. The refresh button on the right is the base color. Sorry, no Internet Explorer.
+Below is an experiment I call _The Colors of Dribbble_. It picks a random color and then displays the palettes of the most popular shots from [Dribbble](http://dribbble.com/) that contain that color. The refresh button on the right is the base color.
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="../javascripts/colors.js"></script>
-<link href="/stylesheets/colors.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script src="/js/colors.js"></script>
+<link href="/css/colors.css" media="screen, projection" rel="stylesheet" type="text/css">
 
 <div class="color-wheel">
   <div id="circle"></div>
@@ -29,7 +29,7 @@ Below is an experiment I call _The Colors of Dribbble_. It picks a random color 
 
 Below the color wheel are palettes of the top eight colors from each shot. If you hover over the bottom palettes it will hide all other palettes from the color wheel. On the surface it's a fun tool to play with. For example, look for the color rules below when hovering.
 
-![color rules](/images/color-rules.png)
+![color rules](/images/blog/color-rules.png)
 
 ###A Color Formula 
 

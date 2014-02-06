@@ -82,6 +82,12 @@ a{
     background: #FFEBBF; /* Firefox */
 }
 
+.col-post{
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 // LOGO ===============================================================
 .logo-header{
     text-align: center;
@@ -96,12 +102,14 @@ a{
     height: 64px;
     width: 84px;
     background-image: url("/images/nathan-speller-logo.png");
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     .nathan-speller-logo{
         background-image: url("/images/nathan-speller-logo@2x.png");
+        background-repeat: no-repeat;
         background-size: 84px 64px;
     }
 }
@@ -146,6 +154,7 @@ ul.posts{
             text-align: right;
             .star{
                 background-image: url("/images/circle.png");
+                background-repeat: no-repeat;
                 height: 10px;
                 width: 10px;
                 display: inline-block;
@@ -153,6 +162,7 @@ ul.posts{
             @media only screen and (-webkit-min-device-pixel-ratio: 2) {
                 .star{
                     background-image: url("/images/circle@2x.png");
+                    background-repeat: no-repeat;
                     background-size: 10px 10px;
                 }
             }
@@ -192,14 +202,15 @@ ul.posts{
     h3{
         margin: 0;
         line-height: 40px;
+        font-size: 28px;
     }
     .logo-title{
         color: $danger;
-        font-size: 24px;
     }
     .logo-subtitle{
         font-weight: 100;
         color: $dark;
+        margin-top: 2px;
     }
 
     .nathan-speller-logo{
@@ -207,11 +218,11 @@ ul.posts{
         right: 120px;
         top: 10px;
         float: left;
-        margin-right: -86px;
+        margin-right: -110px;
     }
 }
 
-@media only screen and (max-width : 990px) {
+@media only screen and (max-width : 900px) {
     .post-header{
         .nathan-speller-logo{
             float: right;
@@ -229,7 +240,8 @@ ul.posts{
 }
 .subtitle{
     font-weight: 100;
-    font-size: 32px;
+    font-size: 28px;
+    letter-spacing: 0;
     margin-top: 0;
     color: $dark;
 }
