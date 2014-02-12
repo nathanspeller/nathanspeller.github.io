@@ -3,7 +3,7 @@ layout: post
 title: "The Few Paths to Success"
 subtitle: "An Analytical Approach"
 date: 2013-01-19 15:50
-comments: true
+active: true
 stars: 3
 categories: 
 ---

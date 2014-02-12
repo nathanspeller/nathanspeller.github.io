@@ -17,6 +17,7 @@ title: Nathan Speller
       <span class="views">Views</span>
       <ul class="posts">
         {% for post in site.posts %}
+          {% if post.active %}
           <li>
             <span class="stars">
             {% for star in (1..post.stars) %}
@@ -28,6 +29,7 @@ title: Nathan Speller
               <h4>{{ post.subtitle }}</h4>
             </a>
           </li>
+          {% endif %}
         {% endfor %}
       </ul>
 

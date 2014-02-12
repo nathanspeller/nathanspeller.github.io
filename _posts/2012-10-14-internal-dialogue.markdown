@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Success is Silent"
-subtitle: "Subtitle"
 date: 2012-10-14 22:18
-comments: true
+active: false
 stars: 1
 categories: 
 ---

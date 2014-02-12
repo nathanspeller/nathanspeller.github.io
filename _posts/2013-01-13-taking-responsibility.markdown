@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Taking Responsibility"
-subtitle: "Subtitle"
 date: 2013-01-13 23:39
-comments: true
+active: false
 categories: 
 ---
 

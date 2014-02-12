@@ -3,7 +3,7 @@ layout: post
 title: "Distraction Creep"
 subtitle: "Dealing with Digital Addiction"
 date: 2013-02-04 12:15
-comments: true
+active: true
 stars: 1
 categories: 
 ---
