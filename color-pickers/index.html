@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Color Pickers</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/base.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-1407949-2', 'nathanspeller.com');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+  <div class="col-post">
+
+    <div class="post-header">
+      <a href="/" class="nathan-speller-logo"></a>
+      <a href="/"><h3 class="logo-title">Nathan Speller</h3></a>
+      <h3 class="logo-subtitle">Design &amp; code for people.</h3>
+    </div>
+
+    <!-- <h4 class="category">FEATURED</h4> -->
+    <h1 class="title">Color Pickers</h1>
+    <h2 class="subtitle">Using Dribbble to Pick Better Palettes</h2>
+    <div class="post">
+    <p>Our goal for this project is to design a color picker that helps everyone (even your grandma) pick &quot;better&quot; color combinations. In other words, is color picking limited to those with taste or is there some underlying relationship we can utilize? Can we write an algorithm that selects great color combinations for us?</p>
+
+<p>Below is an experiment I call <em>The Colors of Dribbble</em>. It picks a random color and then displays the palettes of the most popular shots from <a href="http://dribbble.com/">Dribbble</a> that contain that color. The refresh button on the right is the base color.</p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script src="/js/colors.js"></script>
+
+<p><link href="/css/colors.css" media="screen, projection" rel="stylesheet" type="text/css"></p>
+
+<div class="color-wheel">
+  <div id="circle"></div>
+  <div id="circle-border"></div>
+  <div id="spokes"></div>
+</div>
+
+<div class="color-blocks">
+  <div class="block-house"></div>
+</div>
+
+<p>Below the color wheel are palettes of the top eight colors from each shot. If you hover over the bottom palettes it will hide all other palettes from the color wheel. On the surface it&#39;s a fun tool to play with. For example, look for the color rules below when hovering.</p>
+
+<p><img src="/images/blog/color-rules.png" alt="color rules"></p>
+
+<h3>A Color Formula</h3>
+
+<p>If you&#39;ve ever dabbled in color theory you&#39;ll know there are a ton of rules for picking color combos. You can spend days reading about various color systems, HSV, RGB, CMYK, CIELAB, additive/subtractive color mixing, etc. The rule-based nature of this information makes a &quot;color-combo formula&quot; seem plausible.</p>
+
+<p>Additionally, there won&#39;t be any new colors years from now. The color spectrum of the future will be exactly the same as it is today. It&#39;s neat to think we already have access to the color palettes of the year 3000. Because of this, it seems we have everything we need to write an end-all-be-all algorithm for picking good-looking color palettes.</p>
+
+<p>Unfortunately, it&#39;s not that simple.</p>
+
+<h3>Culture, Context, and Time</h3>
+
+<p>There is a lot more involved in picking color combinations than the rules and guidelines you&#39;ll find in basic color theory. Other things that matter include: </p>
+
+<ul>
+<li>Time - what looked good in the seventies may look terrible now</li>
+<li>Medium - the colors of a movie poster would make a poor street sign</li>
+<li>Popularity - skeuomorphism may be beautiful until everyone does it</li>
+<li>Existing Landscape - a competitor&#39;s colors are off-limits</li>
+</ul>
+
+<p>…suddenly color picking starts to look a lot like predicting stocks.</p>
+
+<p>Ultimately, there is no such thing as a good color combination in a vacuum. What is considered good-looking requires information about society, and about existing color combinations in the space or industry. We need to know what colors are fashionable, trendy, or overused in the world. We need <em>a lot</em> of information.</p>
+
+<p>What does this mean for our color picking algorithm? Do we just give up? How could we possibly collect and incorporate all of this information into a color picker?</p>
+
+<h3>Big Data</h3>
+
+<p>Believe it or not, this information is already available to us. Sites like Dribbble, Forrst, or Behance have created dense communities of designers with taste, sharing their work. At the time of this post there have been 108,854,356,487 pixels &quot;dribbbled&quot; on Dribbble. Not until now could you so quickly aggregate a &quot;snapshot&quot; of great design today. A place that collects samples of the best work from (only) those with taste. </p>
+
+<p>From this we can measure what is up-and-coming, popular, or on it&#39;s way out in the world of design.  We can use the innate understanding from these designers to make color picking easier for everyone else. In the not-too-distant future, we may even be able to measure (and generate?) good taste. </p>
+
+<p>We&#39;ll be releasing a more full-featured color picker soon where you can breakdown colors by medium, see the original artwork, etc. </p>
+
+    </div>
+    <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+    <div class="g-plusone" data-size="medium"></div>
+
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+.color-wheel{
+  height: 500px;
+}
+.block-house{
+  display: inline-block;
+  font-family: Helvetica;
+}
+.brick{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-position: 0px 20px;
+  background-repeat: repeat-x;
+  border-radius: 200px;
+  display: none;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.block{
+  display: block;
+  height: 15px;
+  width: 30px;
+  background-position: 0px 15px;
+  background-repeat: repeat-x;
+  margin: 0 !important;
+}
+.big-color{
+  height: 40px;
+  width: 160px;
+  margin-bottom: 4px;
+  margin-left: -4px;
+}
+.big-static-color{
+  height: 40px;
+  width: 160px;
+  margin-left: -4px;
+}
+
+.color-blocks{
+  margin-bottom: 20px;
+}
+
+.palette{
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+/*    #circle{
+  height: 460px;
+  width: 460px;
+  border-radius: 250px;
+  position: absolute;
+  background-image: url("img/crazy-light.png");
+  background-position: -72px -72px;
+  display: none;
+}*/
+#circle-border{
+  border: 2px solid #EEE;
+  height: 440px;
+  width: 440px;
+  border-radius: 250px;
+  position: relative;
+  margin-right: -440px;
+  margin-bottom: -440px;
+}
+.tiny-brick{
+  height: 20px;
+  width: 20px;
+}
+
+.dot{
+  height: 4px;
+  width: 4px;
+}
+
+.selected{
+  border: 1px solid #000;
+}
+
+.blowup{
+  z-index: 300;
+  position: relative;
+}
+
+.unfocus{
+  opacity: 0.05;
+}
+
+.refresh{
+  height: 60px;
+  width: 60px;
+  position: relative;
+  border-radius: 200px;
+  background-image: url("/images/blog/refresh.png");
+  background-repeat: no-repeat;
+  background-position: 15px 14px;
+  cursor: pointer;
+}
