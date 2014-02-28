@@ -83,20 +83,21 @@ a {
   max-width: 680px;
   margin: 0 auto;
   padding: 0 20px;
+  min-width: 520px;
 }
 
-/* line 92, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 93, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .logo-header {
   text-align: center;
   padding-top: 100px;
 }
-/* line 95, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 96, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .logo-header h1 {
   font-size: 36px;
   color: #f14f45;
 }
 
-/* line 100, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 101, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .nathan-speller-logo {
   display: inline-block;
   height: 64px;
@@ -107,14 +108,14 @@ a {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 110, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+  /* line 111, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
   .nathan-speller-logo {
     background-image: url("/images/nathan-speller-logo@2x.png");
     background-repeat: no-repeat;
     background-size: 84px 64px;
   }
 }
-/* line 118, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 119, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .category {
   text-transform: uppercase;
   font-size: 18px;
@@ -122,7 +123,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* line 127, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 128, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .views {
   color: #ccc4c1;
   text-transform: uppercase;
@@ -134,21 +135,21 @@ a {
   margin-right: -36px;
 }
 
-/* line 138, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 139, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts {
   margin: 0;
   padding: 0;
 }
-/* line 141, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 142, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li {
   border-top: 2px dotted #ccc4c1;
   list-style-type: none;
 }
-/* line 144, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 145, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li:last-child {
   border-bottom: 2px dotted #ccc4c1;
 }
-/* line 147, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 148, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li .stars {
   float: left;
   margin-right: -50px;
@@ -158,7 +159,7 @@ ul.posts li .stars {
   top: 14px;
   text-align: right;
 }
-/* line 155, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 156, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li .stars .star {
   background-image: url("/images/circle.png");
   background-repeat: no-repeat;
@@ -167,34 +168,34 @@ ul.posts li .stars .star {
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 163, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+  /* line 164, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
   ul.posts li .stars .star {
     background-image: url("/images/circle@2x.png");
     background-repeat: no-repeat;
     background-size: 10px 10px;
   }
 }
-/* line 170, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 171, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li a {
   display: block;
   padding: 15px 0px;
 }
-/* line 173, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 174, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li a:hover {
   text-decoration: none;
 }
-/* line 176, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 177, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li a:hover h3 {
   color: #f14f45;
 }
-/* line 180, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 181, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li a h3 {
   color: #222222;
   margin: 0;
   font-size: 24px;
   margin-bottom: 5px;
 }
-/* line 186, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 187, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 ul.posts li a h4 {
   color: #222222;
   font-weight: 100;
@@ -203,32 +204,32 @@ ul.posts li a h4 {
   color: #AAA;
 }
 
-/* line 199, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 200, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-/* line 202, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 203, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header a {
   color: #f14f45;
 }
-/* line 205, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 206, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header h3 {
   margin: 0;
   line-height: 40px;
   font-size: 28px;
 }
-/* line 210, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 211, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header .logo-title {
   color: #f14f45;
 }
-/* line 213, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 214, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header .logo-subtitle {
   font-weight: 100;
   color: #555555;
   margin-top: 2px;
 }
-/* line 219, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 220, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post-header .nathan-speller-logo {
   position: relative;
   right: 120px;
@@ -238,12 +239,12 @@ ul.posts li a h4 {
 }
 
 @media only screen and (max-width: 900px) {
-  /* line 230, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+  /* line 231, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
   .post-header .nathan-speller-logo {
     float: right;
   }
 }
-/* line 237, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 238, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .title {
   font-weight: 800;
   letter-spacing: -1px;
@@ -252,7 +253,7 @@ ul.posts li a h4 {
   margin-top: -10px;
 }
 
-/* line 244, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 245, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .subtitle {
   font-weight: 100;
   font-size: 28px;
@@ -261,21 +262,21 @@ ul.posts li a h4 {
   color: #555555;
 }
 
-/* line 253, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 254, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post h2, .post h3 {
   margin-bottom: -20px;
 }
-/* line 256, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 257, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post blockquote {
   border-color: #ffcb65;
 }
-/* line 259, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 260, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .post img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 265, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
+/* line 266, /Users/nathanspeller/Code/jekyll/nathanspeller/css/base.scss */
 .fb-like {
   position: relative;
   bottom: 5px;
