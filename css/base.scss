@@ -199,6 +199,9 @@ ul.posts{
 .post-header{
     margin-top: 80px;
     margin-bottom: 80px;
+    a{
+        color: $danger;
+    }
     h3{
         margin: 0;
         line-height: 40px;
