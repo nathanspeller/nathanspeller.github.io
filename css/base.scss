@@ -92,7 +92,7 @@ a{
 // LOGO ===============================================================
 .logo-header{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 64px;
     h1{
         font-size: 36px;
         color: $danger;
@@ -198,8 +198,8 @@ ul.posts{
 // POSTS =============================================================
 
 .post-header{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 64px;
+    margin-bottom: 64px;
     a{
         color: $danger;
     }
@@ -239,7 +239,7 @@ ul.posts{
     font-weight: 800;
     letter-spacing: -1px;
     font-size: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: -10px;
 }
 .subtitle{
@@ -248,6 +248,7 @@ ul.posts{
     letter-spacing: 0;
     margin-top: 0;
     color: $dark;
+    margin-bottom: 0;
 }
 
 .post{

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Color Pickers"
-subtitle: "Using Dribbble to Pick Better Palettes"
+subtitle: "Using Dribbble to pick better palettes."
 date: 2013-05-08 16:59
 active: true
 stars: 3
